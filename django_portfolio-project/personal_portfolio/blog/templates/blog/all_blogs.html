@@ -1,1 +1,8 @@
 Hello This is the all blogs Page
+
+{% for blog in blogs%}
+<h1>{{ blog.title }}</h1>
+<h5>{{ blog.date }}</h5>
+<p>{{ blog.blog_description }}</p>
+
+{% endfor %}
